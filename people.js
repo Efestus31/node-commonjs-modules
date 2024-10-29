@@ -8,7 +8,10 @@ const listaHobby = hobbyList("lettura", "ciclismo", "cucina");
 
 function personAndHobbies() {
     // Unisce gli oggetti usando lo spread operator
-    return {...persona, ...listaHobby};
+    return {
+        ...persona, 
+        hobbies: listaHobby.hobbies
+    };
 }
 
 // Crea un nuovo oggetto che combina le informazioni
